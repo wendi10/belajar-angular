@@ -1,0 +1,75 @@
+
+<app-nav-bar></app-nav-bar>
+<!-- <h1>Welcome!</h1>
+<div class="play-container" >
+    <p>You've clicked <span (click)="countClick()">this</span> {{ clickCounter }} times.</p>
+</div>
+
+<div class="play-container" [ngStyle]="{
+    'background-color' : clickCounter > 4 ? 'yellow' : 'green',
+    'border':            clickCounter > 4 ? '4px solid black' : 'none'
+}">
+    <p>
+        <input type='text' [(ngModel)]='name'>
+        <br>
+        <strong> You said : </strong> {{ name }}
+    </p>
+</div>
+
+<div class="play-container" [style.background-color]="clickCounter > 4 ? 'yellow' : 'green' ">
+    <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+        <p> greater than 4</p>
+    </ng-template>
+    <ng-template #none>
+        <p>
+            not greate than 4
+        </p>
+    </ng-template>
+</div> -->
+<div class="landing-content">
+    <div class="landing-content__container">
+        <div class="tnk-row">
+            <div class="tnk-column-5 landing-content__container--content">
+                <div class="landing-content__container--title margin-bottom">
+                    <h1>Ajukan Pinjaman Online Tanpa Jaminan</h1>
+                </div>
+                <div class="landing-content__container--subtitle margin-bottom">
+                    <p>Hanya dengan KTP, dapatkan kredit tanpa agunan hingga <strong>20.000.000</strong></p>
+                </div> 
+
+                <div class="landing-content__container--footer">
+                    <div class="landing-content__container--footer-text">
+                        <p>
+                            Tunaiku adalah produk dari Bank Amar yang terdaftar dan diawasi
+                            oleh OJK sejak 2014
+                        </p>
+                    </div>
+                    <div class="landing-content__container--footer-logos">
+                        <a href="https://amarbank.co.id/" id="BtnAmarbankLogo" rel="nofollow noopener noreferrer" target="_blank">
+                            <img alt="pinjaman online" class="logo" src="../../assets/img/Amar-Bank.svg">
+                        </a>
+                        <a class="logo__wrapper" href="https://www.ojk.go.id/" id="BtnOjkLogo" rel="nofollow noopener noreferrer" target="_blank">
+                            <img alt="pinjaman online" class="logo" src="../../assets/img/OJK.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tnk-column-2">
+                <img class="landing-woman" src="../../assets/img/homepage-woman.png" />
+            </div>
+            <div class="tnk-column-5 loan-slider">
+                <div class="loan-slider--container">
+                    <div class="row">                    
+                        <div class="col-sm-12">
+                            <app-slider></app-slider>
+                        </div>
+                    </div>
+                    <hr>
+                        <div class="col-sm-6 offset-sm-3"> Cicilan per bulan</div>
+                        <div class="col-sm-6 offset-sm-3">{{ returnTotal() }}</div>
+                        <a class="btn btn-primary btn-full" [routerLink]="['/ajukan-pinjaman']">Ajukan Pinjaman</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

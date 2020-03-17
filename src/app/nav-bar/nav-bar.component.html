@@ -1,0 +1,65 @@
+<header class="header">
+    <div class="navbar">
+        <div class="container">
+            <div class="tnk-navbar__block tnk-navbar__block--left">
+                <a href="#" class="logo">
+                    <img width="124px" src="../../assets/img/logo.png">
+                </a>
+            </div>
+        <div class="master-desktop tnk-navbar__block tnk-navbar__block--center">
+            <div class="master-desktop__menu">
+                <span>
+                    <img width="32px" src="../../assets/img/baru.svg">
+                </span>
+                <a class="ng-tns-c2-2" id="LinkMenuTentangKami">Tunaiku Invest</a>
+            </div>
+            <div class="master-desktop__menu master-desktop__menu--dropdown" (mouseover)="onMouseEnter()" (mouseout)="onMouseLeave()"  >
+                Product
+                <span class="triangle"></span>
+                <div class="dropdown" id="product-dropdown" [ngStyle]="{
+                    'display': hovered ? 'block' : 'none' 
+                }">
+                    <p class="dropdown__header">Nasabah</p>
+                    <div class="dropdown__body">
+                    <a class="ng-tns-c2-0" id="LinkMenuReferral" target="_blank" href="https://dev-partner.tunaiku.com/landing/individual">
+                        Referral
+                    </a>
+                    <a class="ng-tns-c2-0" href="https://swara.tunaiku.com" id="LinkMenuSwara" rel="noopener noreferrer" target="_blank">
+                        Swara
+                    </a>
+                    </div>
+                    <p class="dropdown__header">Bisnis</p>
+                    <div class="dropdown__body">
+                    <a class="ng-tns-c2-0" id="LinkMenuPartnerBisnis" target="_blank" href="https://dev-partner.tunaiku.com/landing/business">
+                        Partner Bisnis
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="master-desktop__menu">
+                <a class="ng-tns-c2-2" id="LinkMenuTentangKami">Tentang Kami</a>
+            </div>
+            <div class="master-desktop__menu">
+                <a class="ng-tns-c2-2" id="LinkMenuTentangKami">Rilis Media</a>
+            </div>
+        </div>
+
+        <div class="master-help tnk-navbar__block">
+            <span class="icon">
+                <img src="../../assets/img/saran.svg">
+            </span>
+            <label class="tnk-icon__label">
+                Saran
+            </label>
+        </div>
+
+        <div class="tnk-navbar__block tnk-navbar__block--right">
+            <button class="tnk-button tnk-button--primary tnk-button--outlined button-login" id="BtnLogin">
+                Masuk Akun
+            </button>
+        </div>
+
+        </div>
+    </div>
+</header>

@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-sm-6">
+        <div class="loan-slider--slider-title">
+            Jumlah Pinjaman
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <p class="text-green">
+            {{ formatPrice(loan.value) }} Juta 
+        </p>
+    </div>
+    <div class="col-sm-12">
+        <mat-slider 
+            min=6000000
+            max=20000000
+            step=1000000
+            #loan
+            (change)="setLoanAAmount($event)">
+        </mat-slider>
+    </div>
+    <div class="col-sm-6">
+        6 Juta
+    </div>
+    <div class="col-sm-6 pull-right" style="text-align: right;">
+        20 Juta
+    </div>
+
+    <div class="col-sm-6">
+        <div class="loan-slider--slider-title">
+            Lama Pinjaman
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <p class="text-green">
+            {{loanPeriod.value }} Bulan
+        </p>
+    </div>
+    <div class="col-sm-12">
+        <mat-slider 
+            min=6
+            max=20
+            step=1
+            #loanPeriod 
+            (change)="setLoanPeriod($event)"
+            >
+        </mat-slider>
+    </div>
+    <div class="col-sm-6">
+        6 Bulan
+    </div>
+    <div class="col-sm-6 pull-right" style="text-align: right;">
+        20 Bulan
+    </div>
+</div>
+

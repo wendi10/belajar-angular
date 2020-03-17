@@ -1,0 +1,209 @@
+.navbar {
+    position: relative;
+    height: 70px;
+    min-height: 70px;
+    box-shadow: 0 2px 3px 0px rgba(0,0,0,.2);
+    padding: 0;
+
+    .tnk-navbar__block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        height: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .tnk-navbar__block--left {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+    }
+
+    .tnk-navbar__block--center {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .tnk-navbar__block--right {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+}
+
+.master-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.master-desktop__menu {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #25282b;
+    font-size: 15px;
+
+    a {
+        font-weight: 400;
+        color: #25282b;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #48a800;
+    } 
+}
+
+.master-desktop__menu--dropdown{
+    position: relative;
+    display: inline-block;
+    height: 70px;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 27px 15px 24px;
+    line-height: 17px;
+
+    .triangle {
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        width: 0;
+        height: 0;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 4px solid #25282b;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        margin-top: 20px;
+        width: 150px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        -webkit-box-shadow: 0 3px 2px 0 rgba(0,0,0,.1);
+        box-shadow: 0 3px 2px 0 rgba(0,0,0,.1);
+
+        .dropdown-active {
+            display: block !important;
+        }
+        
+        .dropdown__header {
+            padding: 6px 16px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #25282b;
+            line-height: 12px;
+            margin: 0;
+            cursor: default;
+        }
+
+        .dropdown__body {
+            border-bottom: 1px solid #f0f0f0;
+
+             a {
+                display: block;
+                color: #25282b;
+                margin: 0;
+                padding: 7.5px 15px;
+             }
+        }
+    }
+}
+
+.tnk-button {
+    display: inline-block;
+    position: relative;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    padding: 12.5px 15px;
+    font-weight: 700;
+    border-radius: 4px;
+    line-height: 1;
+    background: #999;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.05), 0 0.5px 1px rgba(0,0,0,.1);
+    box-shadow: 0 3px 6px rgba(0,0,0,.05), 0 0.5px 1px rgba(0,0,0,.1);
+}
+
+.tnk-button--primary.tnk-button--outlined {
+    -webkit-transition: 250ms cubic-bezier(.2,.85,.2,1.1);
+    transition: 250ms cubic-bezier(.2,.85,.2,1.1);
+    background-color: transparent;
+    color: #48a800;
+    border: 1px solid #48a800;
+}
+
+.tnk-button--primary.tnk-button--outlined:focus {
+    background-color: #48a800;
+    color: #f5f5f5;
+}
+
+.tnk-button--primary.tnk-button--outlined:hover {
+    background-color: #48a800;
+    color: #f5f5f5;
+}
+
+.button-login {
+    margin: 0 20px;
+}
+
+.master-help {
+    cursor: pointer;
+
+    .tnk-icon__label {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .tnk-icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    *, ::after, ::before {
+        background-repeat: no-repeat;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    *, :after, :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.header {
+    z-index: 1500;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1500;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 150ms ease-in-out;
+    transition: 150ms ease-in-out;
+}
